@@ -53,7 +53,7 @@ if (isset($_POST["daftar"])) {
     <script src="../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
-            background-image: url('../assets-templates/bckgrndDaftar.png'); 
+            background-image: url('../assets-templates/bckgrndDaf.png'); 
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -62,13 +62,16 @@ if (isset($_POST["daftar"])) {
                 position: absolute; 
                 top: 52%;
                 left: 50%;
-                width: 600px;
+                width: 590px;
                 transform: translate(-50%, -50%);      
-                background-color: rgba(255, 255, 255, 0.50);
+                background-color: rgba(255, 255, 255, 0.55);
                 padding: 20px;
                 border-radius: 10px;
                 display: flex;
-                flex-direction: column;    
+                flex-direction: column;  
+            }
+            .font {
+                font-weight: bold;
             }
             .alert-custom {
                 width: 450px;
@@ -83,7 +86,7 @@ if (isset($_POST["daftar"])) {
             .success {
             font-weight: bold;
             margin-bottom: 10px;
-            line-height: 11px;
+            line-height: 12px;
             }
             .error {
                 color: red;
@@ -102,30 +105,27 @@ if (isset($_POST["daftar"])) {
     <div class="alert alert-info alert-dismissible fade show alert-custom <?php echo $update_successful ? 'success' : ($error_occurred ? 'error' : ''); ?>" role="alert" style="max-height: 100px; overflow-y: auto;">
         <?php echo $register_message; ?>
         <?php if ($update_successful) : ?>
-            <!-- <a href="tampilkanPendaftar.php" class="btn btn-sm btn-success float-end btnM">Lihat Pendaftar</a> -->
         <?php endif; ?>
     </div>
 <?php endif; ?>
-
-
         <form method="post" action="">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-12">
                 <div class="row mb-2">
-                    <label for="nama" class="col-sm-3 col-form-label">Nama :</label>
+                    <label for="nama" class="col-sm-3 col-form-label font">Nama :</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" name="nama" id="nama" required>
                     </div>
                 </div>
                 <div class="row mb-2">
-                    <label for="alamat" class="col-sm-3 col-form-label">Alamat :</label>
+                    <label for="alamat" class="col-sm-3 col-form-label font">Alamat :</label>
                     <div class="col-sm-9">
                         <textarea class="form-control" name="alamat" id="alamat" style="height: 100px" required></textarea>
                     </div>
                 </div>
                 <div class="row mb-2">
-                    <label for="agama" class="col-sm-3 col-form-label">Agama :</label>
+                    <label for="agama" class="col-sm-3 col-form-label font">Agama :</label>
                     <div class="col-sm-9">
                         <select class="form-select" name="agama" id="agama" required>
                             <option value="">Pilih Agama</option>
@@ -139,7 +139,7 @@ if (isset($_POST["daftar"])) {
                     </div>
                 </div>
                 <fieldset class="row mb-2">
-                    <legend class="col-form-label col-sm-3 pt-0">Jenis Kelamin :</legend>
+                    <legend class="col-form-label col-sm-3 pt-0 font">Jenis Kelamin :</legend>
                     <div class="col-sm-9">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="jenis_kelamin" id="jenis_kelamin_perempuan" value="Perempuan" required>
@@ -156,7 +156,7 @@ if (isset($_POST["daftar"])) {
                     </div>
                 </fieldset>
                 <div class="row mb-2">
-                    <label for="sekolah_asal" class="col-sm-3 col-form-label">Sekolah Asal :</label>
+                    <label for="sekolah_asal" class="col-sm-3 col-form-label font">Sekolah Asal :</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" name="sekolah_asal" id="sekolah_asal" required>
                     </div>

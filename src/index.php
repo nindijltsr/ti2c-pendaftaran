@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
   <style>
     body {
-      background-image: url('../assets-templates/bckgrndIndex.jpg');
+      background-image: url('../assets-templates/bckgrndIndex.png');
       background-size: cover;
       background-position: center;
       height: 100vh;
@@ -16,10 +16,9 @@
 
     .container1 {
       position: absolute;
-      /* Use absolute positioning for centering */
       top: 50%;
       left: 50%;
-      width: 500px;
+      width: 550px;
       transform: translate(-50%, -50%);
       background-color: rgba(255, 255, 255, 0.50);
       padding: 20px;
@@ -37,7 +36,6 @@
 
     .btn {
       margin: 0 auto;
-      /* Center button horizontally */
     }
 
     .btnM {

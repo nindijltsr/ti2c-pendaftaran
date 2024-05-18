@@ -31,7 +31,7 @@ $total_rows = $result->num_rows;
     <link rel="stylesheet" href="../vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-image: url('../assets-templates/bckgrndDaftar.png');
+            background-image: url('../assets-templates/bckgrndPen.png');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -59,7 +59,7 @@ $total_rows = $result->num_rows;
 
     <div class="container">
         <div class="center">
-            <h2 class="text-center">Mahasiswa Terdaftar</h2>
+            <h2 class="text-center" style="color:#E8F3F4;">Mahasiswa Terdaftar</h2>
 
             <?php if (!empty($delete_message)) : ?>
                 <div class="alert alert-info alert-dismissible fade show" role="alert">
@@ -103,7 +103,7 @@ $total_rows = $result->num_rows;
                     Tidak ada data yang ditemukan.
                 </div>
             <?php endif; ?>
-            <div class="total">
+            <div class="total" style="color: #5CE1E6;">
                 Total Mahasiswa Terdaftar : <?= $total_rows ?>
             </div>
 

@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["update"])) {
     <title>Edit Data Barang</title>
     <style>
         body {
-            background-image: url('../assets-templates/bckgrndDaftar.png'); 
+            background-image: url('../assets-templates/bckgrndDaf.png'); 
             background-size: cover;
             background-position: center;
             height: 100vh;
